@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DatagetterService } from '../../services/datagetter.service';
+
 
 @Component({
   selector: 'app-basic',
@@ -6,10 +8,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./basic.component.scss']
 })
 export class BasicComponent implements OnInit {
-
-  constructor() { }
+  constructor(private datagetterService: DatagetterService) {}
 
   ngOnInit() {
+    this.datagetterService.readJSON().subscribe((value) => { console.log(value); });
   }
-
 }
