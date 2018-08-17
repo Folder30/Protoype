@@ -4,6 +4,9 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 
+import { BasicComponent } from './basic/basic.component';
+import { MenuhautComponent } from './menuhaut/menuhaut.component';
+
 import { HomePage } from './home.page';
 
 @NgModule({
@@ -18,6 +21,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, BasicComponent, MenuhautComponent]
 })
 export class HomePageModule {}
