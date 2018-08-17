@@ -1,0 +1,8 @@
+{
+  "name": "Prototype",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular",
+  "pro_id": "4fe888de"
+}
