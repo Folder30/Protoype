@@ -8,6 +8,7 @@ import { BasicComponent } from './basic/basic.component';
 import { MenuhautComponent } from './menuhaut/menuhaut.component';
 
 import { HomePage } from './home.page';
+import { TestComponent } from './test/test.component';
 
 @NgModule({
   imports: [
@@ -21,6 +22,6 @@ import { HomePage } from './home.page';
       }
     ])
   ],
-  declarations: [HomePage, BasicComponent, MenuhautComponent]
+  declarations: [HomePage, BasicComponent, MenuhautComponent, TestComponent]
 })
 export class HomePageModule {}
